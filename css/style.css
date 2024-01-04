@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Style the header */
+header {
+  width: 100%;
+  height: 50px;
+	position:sticky; left: 0; top:0; z-index: 1000;
+	background-color:antiquewhite;
+	border-bottom: 1px solid grey
+}
+.gachchan {
+  border-bottom: 2px solid darkred
+}
+
+.logo {
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
+  padding: 0px 15px
+}
+.menu {
+  padding-top: 0px
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  list-style: none;
+  padding: 0px;
+}
+.menu ul li{
+	padding: 0 
+}
+.menu ul li a {
+  margin: 0;
+  padding:10px 20px;
+  text-decoration: none;
+  color: #3E3E3E;
+  border-radius: 0px;
+  font-size: 15px
+}
+.menu ul li a:hover {
+  background-color:rgba(148,83,54,0.90);
+	color: aliceblue;
+}
+
+
+/*submenu*/
+.menu ul li {
+  position: relative;
+}
+.menu ul .submenu {
+  position: absolute;
+  left: 0;
+  top: 186%;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+	color: aliceblue;
+ background-color:rgba(191,154,137,0.30);
+  display: none;
+	z-index: 100
+}
+.menu ul .submenu li a {
+  display: block;
+}
+.menu ul .submenu li {
+  border-bottom: 1px solid rgba(92, 92, 92, 1.00);
+}
+.menu li:hover .submenu {
+  display: block
+}
+.submenu li a {}
+.menu ul .submenu2 {
+  position: absolute;
+  left: 101%;
+  top: 0;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+  background-color:rgba(191,154,137,0.30);
+	color: aliceblue;
+  opacity: 0;
+}
+.menu ul li .submenu li:hover .submenu2 {
+  opacity: 1
+}
+/*submenu*/
+
+
+.lienhe {
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+.lienhe a {
+  margin: 0;
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #3E3E3E
+}
+/*phan mau cho nav*/
+#slider .owl-nav {
+  position: absolute;
+  left: -20%;
+  top: 35%;
+  width: 140%;
+}
+#slider .owl-nav [class*='owl-'] {
+  font-size: 100px; /*background:none */ color: #fff;
+}
+#slider .owl-nav [class*='owl-']:hover {
+  color: #fff
+}
+#slider .owl-nav .owl-next {
+  position: absolute;
+  right: 5%;
+}
+#slider .owl-nav .owl-prev {
+  position: absolute;
+  left: 5%;
+}
+#slider .owl-nav [class*='owl-']:hover {
+  background: none;
+  border: none;
+  color: darkred;
+  text-decoration: none;
+}
+/*style cho dots*/
+#slider .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+}
+#slider .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+}
+/*mau cho dots*/
+#slider .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #333333;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+#slider .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: white;
+}
+.vien {
+  width: 100%;
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden
+}
+.vien2 {
+  width: 100%;
+  border: 1px solid white;
+  padding: 15px;
+  position: relative;
+  overflow: hidden
+}
+.vien:hover .icon {
+  top: 40%
+}
+.icon {
+  position: absolute;
+  width: 80%;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  left: 10%;
+  top: -15%;
+  transition: all 1s
+}
+.icon a {
+  top: 40%;
+  width: 45px;
+  height: 45px;
+  color: aliceblue;
+  background-color:rgba(153,91,62,1.00);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.icon a:hover {
+  color: rgba(153,91,62,1.00);
+  background: rgba(255, 255, 255, 1.00)
+}
+.row ul {
+  list-style: none;
+  padding: 0;
+}
+.textdo {
+  text-transform: bold;
+  color: red;
+	text-decoration: none
+	  
+}
+main {
+  width: 100%
+}
+.box-cha {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  left: 0;
+  top: 0;
+	padding-top: 20px
+}
+.caption {
+  width: 45%;
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  top: 20%;
+  z-index: 100;
+  display: block
+}
+.caption h1 {
+  font-size: 35px;
+  margin-bottom: 0;
+  margin-top: px;
+  letter-spacing: 2px;
+ 
+}
+.caption p {
+  color: white;
+  margin-top: 10px
+}
+.caption2 {
+  width: 45%;
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  top: 15%;
+  z-index: 100;
+  display: block
+}
+.caption2 h1 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  letter-spacing: 2px;
+ 
+}
+.caption2 p {
+  color: white;
+  margin-top: 10px
+}
+.anhnen { width: 100%; height: 0 auto ;
+ top:0 ;left: 0; z-index: 0}
+.form-control{
+	padding: 12px;margin-bottom: 10px; width: 100%
+}
+.shadow{ padding: 30px;  box-shadow: 5px 5px 5px grey;text-align: left;
+}
+.content_blog{
+	padding-top: 25%
+}
+.vien2 i{
+	padding: 0% 5%
+}
+
+
+
+
+
+
+
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position:fixed;
+  top: 0;
+  width: 100%;
+	z-index: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+.bando {width: 100%; }
+.vienbando{ 
+	border-radius: 0px; 
+	min-height: 100px;
+	width: 100%;
+	height: 280px;
+	padding: 0px; 
+	text-decoration: none; 
+	margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px #AAA}
+.noidungbando{
+	width: 80%; padding: 5px 20px; margin: 0
+}
+.noidungbando h4{
+	margin: 0; padding: 0
+}
+.noidungbando p{
+margin: 0; padding-top: 10px; padding-left: 0; font-size:14px;
+}
+.noidungkhac{
+	margin: 0; padding: 0; text-align: center; font-size: 20px
+}
